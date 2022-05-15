@@ -70,6 +70,8 @@
         display: block;
         position: relative;
 
+        visibility: visible;
+
         height: 800px;
 
         top: 0px;
@@ -83,6 +85,65 @@
 
     
     }
+
+    .foto2 {
+        display: block;
+        position: absolute;
+
+        visibility: hidden;
+
+        height: 800px;
+
+        top: 0px;
+
+        margin: 0 auto;
+        padding: 0;
+        
+        border: 2px solid black;
+
+        border-radius: 15px;
+    
+    }
+
+    .foto3 {
+        display: block;
+        position: absolute;
+
+        visibility: hidden;
+
+        height: 800px;
+
+        top: 0px;
+
+        margin: 0 auto;
+        padding: 0;
+        
+        border: 2px solid black;
+
+        border-radius: 15px;
+    
+    }
+
+    .foto4 {
+        display: block;
+        position: absolute;
+
+        visibility: hidden;
+
+        height: 800px;
+
+        top: 0px;
+
+        margin: 0 auto;
+        padding: 0;
+        
+        border: 2px solid black;
+
+        border-radius: 15px;
+    
+    }
+
+    
 
     .about {
         display: flex;
@@ -108,10 +169,98 @@
 */
     }
 
-    .text {
+    .text1 {
 
         position: relative;
         display: block;
+
+        height: 100px;
+        width: 1200px;
+
+        top: 25px ;
+
+        color: white;
+
+        font-family: "Georgia-regular";
+        font-weight: 400;
+        font-style: normal;
+
+        text-align: left;
+
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: 1.7px;
+
+        margin: 0;
+        padding: 0;
+
+
+    }
+
+    .text2 {
+
+        position: relative;
+        display: block;
+
+        visibility: hidden;
+
+        height: 100px;
+
+        top: 25px ;
+
+        color: white;
+
+        font-family: "Georgia-regular";
+        font-weight: 400;
+        font-style: normal;
+
+        text-align: left;
+
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: 1.7px;
+
+        margin: 0;
+        padding: 0;
+
+
+    }
+
+    .text3 {
+
+        position: relative;
+        display: block;
+
+        visibility: hidden;
+
+        height: 100px;
+
+        top: 25px ;
+
+        color: white;
+
+        font-family: "Georgia-regular";
+        font-weight: 400;
+        font-style: normal;
+
+        text-align: left;
+
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: 1.7px;
+
+        margin: 0;
+        padding: 0;
+
+
+    }
+
+    .text4 {
+
+        position: relative;
+        display: block;
+
+        visibility: hidden;
 
         height: 100px;
 
@@ -143,7 +292,7 @@
         flex-direction: row;
         align-items: center;
 
-        width: 300px;
+        width: 800px;
 
         margin: 0;
 
@@ -165,7 +314,7 @@
 
     }
     
-    .control2 , .control3 , .control4 {
+    .control2 {
         display: block;
         position: relative;
 
@@ -179,17 +328,72 @@
 
     }
 
+    .control3 {
+        display: block;
+        position: relative;
+
+        width: 50px;
+        height: 50px;
+
+        background-color: blue;
+        border-radius: 25px;
+
+        cursor: pointer;
+
+    }
+
+    .control4 {
+        display: block;
+        position: relative;
+
+        width: 50px;
+        height: 50px;
+
+        background-color: blue;
+        border-radius: 25px;
+
+        cursor: pointer;
+
+    }
+
+    
     .control2:hover , .control3:hover , .control4:hover {
         background-color: white;
 
 
     }
+   
 
     .control1:hover {
         border: 6px solid white;
 
     }
 
+    
+
+    .control2:hover + img > .foto2 {
+        visibility: visible;
+
+    }
+
+    /*
+    .control2:hover + .foto1 {
+        visibility: hidden;
+
+    }
+
+    
+    .control2:hover .foto3 {
+        visibility: hidden;
+
+    }
+
+    .control2:hover .foto4 {
+        visibility: hidden;
+
+    }
+
+    */
 
 
 
@@ -228,8 +432,7 @@
         height: 700px;
 
         */
-
-                 
+                         
         top: 0px;
 
         margin: 0;
@@ -246,6 +449,7 @@
         width: 290px;
         */
         width: calc( 100% - 30px) ;
+
 
         top: 25px;
 
@@ -276,9 +480,62 @@
 
         border-radius: 20px;
 
+    }
+
+    .foto2 {
+        display: block;
+        position: absolute;
+
+        visibility: hidden;
+
+        width: calc( 100% ) ;
         
+        top: 0px;
 
+        margin: 0 auto;
+        padding: 0;
+        
+        border: 2px solid black;
 
+        border-radius: 20px;
+
+    }
+
+    .foto3 {
+        display: block;
+        position: absolute;
+
+        visibility: hidden;
+
+        width: calc( 100% ) ;
+        
+        top: 0px;
+
+        margin: 0 auto;
+        padding: 0;
+        
+        border: 2px solid black;
+
+        border-radius: 20px;
+
+    }
+
+    .foto4 {
+        display: block;
+        position: absolute;
+
+        visibility: hidden;
+
+        width: calc( 100% ) ;
+        
+        top: 0px;
+
+        margin: 0 auto;
+        padding: 0;
+        
+        border: 2px solid black;
+
+        border-radius: 20px;
 
     }
 
@@ -308,10 +565,106 @@
 */
     }
 
-    .text {
+    .text1 {
 
         position: absolute;
         display: block;
+
+        height: 100px;
+        width: calc( 100% - 40px) ;
+
+        /*top:70px ;*/
+
+        color: white;
+
+        font-family: "Georgia-regular";
+        font-weight: 400;
+        font-style: normal;
+
+        text-align: left;
+
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: 1.7px;
+
+        margin: 20px 0 0 20px;
+        padding: 0;
+
+        bottom: 50px;
+
+
+    }
+
+    .text2 {
+
+        position: absolute;
+        display: block;
+
+        visibility: hidden;
+
+        height: 100px;
+        width: calc( 100% - 40px) ;
+
+        /*top:70px ;*/
+
+        color: white;
+
+        font-family: "Georgia-regular";
+        font-weight: 400;
+        font-style: normal;
+
+        text-align: left;
+
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: 1.7px;
+
+        margin: 20px 0 0 20px;
+        padding: 0;
+
+        bottom: 50px;
+
+
+    }
+
+    .text3 {
+
+        position: absolute;
+        display: block;
+
+        visibility: hidden;
+
+        height: 100px;
+        width: calc( 100% - 40px) ;
+
+        /*top:70px ;*/
+
+        color: white;
+
+        font-family: "Georgia-regular";
+        font-weight: 400;
+        font-style: normal;
+
+        text-align: left;
+
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: 1.7px;
+
+        margin: 20px 0 0 20px;
+        padding: 0;
+
+        bottom: 50px;
+
+
+    }
+
+    .text4 {
+
+        position: absolute;
+        display: block;
+
+        visibility: hidden;
 
         height: 100px;
         width: calc( 100% - 40px) ;

@@ -1,0 +1,135 @@
+@font-face {
+    font-family: Georgia-regular ; /* Гарнитура шрифта */
+    font-weight: normal;
+    src: url("../../assets/fonts/georgia/georgia-regular.ttf"); /* Путь к файлу со шрифтом */
+}
+
+
+@media only screen and (min-width: 1280px) { 
+
+    body {
+        padding: 0 ;
+        margin: 0;
+        
+    }
+
+    .container {
+        
+        display: block;
+        /*margin: 0 auto;*/
+        /*max-width: 768px;*/
+        /*width: 100%;*/
+        /*min-width: 768px;*/
+        top: 0px;
+        
+    }
+
+    .main {
+        display: block;
+        position: relative;
+
+        width: 1280px;
+        height: 1000px;
+
+        top: 50px;
+
+        margin: 0 auto;
+        padding: 0;
+
+        background-color: rgb(28, 26, 26);
+
+    }
+
+    .slider {
+        display: block;
+        position: relative;
+
+        width: 1200px;
+        height: 800px;
+
+        top: 25px;
+
+        margin: 0 auto;
+        padding: 0; 
+
+        background-color: rgb(195, 131, 131);
+
+        border: 2px solid black;
+
+        border-radius: 20px;
+
+
+    }
+
+    .foto1 {
+        display: block;
+        position: relative;
+
+        width: 1200px;
+        height: 800px;
+
+        top: 0px;
+
+        margin: 0 auto;
+        padding: 0;
+/*
+        border: 2px solid black;
+
+        border-radius: 3px;
+
+        */
+
+
+
+    }
+
+    .about {
+        display: block;
+        position: relative;
+
+        width: 1200px;
+        height: 100px;
+
+        top: 50px;
+
+        margin: 0 auto;
+        padding: 0; 
+
+        /*
+        background-color: rgb(195, 131, 131);
+
+        border: 2px solid black;
+
+        border-radius: 20px;
+
+*/
+    }
+
+    .text {
+        color:#F1CDB3;
+
+        font-family: "Georgia-regular";
+        font-weight: 400;
+        font-style: normal;
+
+        text-align: center;
+
+        font-size: 32px;
+        line-height: 110%;
+        letter-spacing: 1.7px;
+
+
+    }
+
+
+
+
+
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 1279.9px) {
+
+
+
+}

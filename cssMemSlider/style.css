@@ -196,7 +196,8 @@
     #slide3:checked ~ .about > .p3,
     #slide4:checked ~ .about > .p4    {
         
-        display: block;
+        visibility: visible;
+        transform: translateX( 20px) ;
     }
 
     
@@ -219,7 +220,7 @@
     .p1, .p2, .p3, .p4 {
 
         position: absolute;
-        display: none;
+        display: block;
 
         height: 100px;
         width: 1200px;
@@ -240,6 +241,10 @@
 
         margin: 0;
         padding: 0;
+
+        visibility: hidden;
+        transition: transform 2s ;
+        transform: translateX( 0px) ;
 
 
     }
@@ -520,7 +525,9 @@
     #slide3:checked ~ .about  .p3,
     #slide4:checked ~ .about  .p4    {
         
-        display: block;
+        /*display: block;*/
+        visibility: visible;
+        transform: translateX( 20px) ;
         
     }
     
@@ -538,13 +545,16 @@
         
         z-index: 50;
 
+        
+
     }
 
     .p1, .p2, .p3, .p4 {
 
         position: absolute;
-        display: none;
+        display: block;
 
+        
         height: 100px;
         width: calc( 100% - 40px) ;
 
@@ -563,9 +573,13 @@
         letter-spacing: 1.7px;
 
         margin: 0px;
-        padding: 0;        
-
-
+        padding: 0;      
+        
+        visibility: hidden;
+        transition: transform 2s ;
+        transform: translateX( 0px) ;
+        
+        
     }
 
     

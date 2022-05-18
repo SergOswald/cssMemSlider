@@ -106,22 +106,22 @@
     }
 
     .slide1 { 
-        background-image: url(../../assets/images/1.jpg); 
+        background-image: url(../assets/images/1.jpg); 
         
     }
 
     .slide2 { 
-        background-image: url(../../assets/images/2.jpg); 
+        background-image: url(../assets/images/2.jpg); 
         
     }
 
     .slide3 { 
-        background-image: url(../../assets/images/3.jpg); 
+        background-image: url(../assets/images/3.jpg); 
         
     }
 
     .slide4 { 
-        background-image: url(../../assets/images/4.jpg); 
+        background-image: url(../assets/images/4.jpg); 
         
     }
 
@@ -191,87 +191,19 @@
         transform: scale(1);
     }
 
-    .foto1 {
-        display: block;
-        position: relative;
-
-        visibility: visible;
-
-        height: 800px;
-
-        top: 0px;
-
-        margin: 0 auto;
-        padding: 0;
+    #slide1:checked ~ .about > .p1,
+    #slide2:checked ~ .about > .p2,
+    #slide3:checked ~ .about > .p3,
+    #slide4:checked ~ .about > .p4    {
         
-        border: 2px solid black;
-
-        border-radius: 15px;
-
-    
-    }
-
-    .foto2 {
         display: block;
-        position: absolute;
-
-        visibility: hidden;
-
-        height: 800px;
-
-        top: 0px;
-
-        margin: 0 auto;
-        padding: 0;
-        
-        border: 2px solid black;
-
-        border-radius: 15px;
-    
-    }
-
-    .foto3 {
-        display: block;
-        position: absolute;
-
-        visibility: hidden;
-
-        height: 800px;
-
-        top: 0px;
-
-        margin: 0 auto;
-        padding: 0;
-        
-        border: 2px solid black;
-
-        border-radius: 15px;
-    
-    }
-
-    .foto4 {
-        display: block;
-        position: absolute;
-
-        visibility: hidden;
-
-        height: 800px;
-
-        top: 0px;
-
-        margin: 0 auto;
-        padding: 0;
-        
-        border: 2px solid black;
-
-        border-radius: 15px;
-    
     }
 
     
 
+    
     .about {
-        display: flex;
+        display: block;
         position: relative;
 
         width: 1200px;
@@ -282,22 +214,12 @@
         margin: 0 auto;
         padding: 0; 
 
-        justify-content: space-between;
-
-        /*
-        background-color: rgb(195, 131, 131);
-
-        border: 2px solid black;
-
-        border-radius: 20px;
-
-*/
     }
 
-    .text1 {
+    .p1, .p2, .p3, .p4 {
 
-        position: relative;
-        display: block;
+        position: absolute;
+        display: none;
 
         height: 100px;
         width: 1200px;
@@ -322,93 +244,7 @@
 
     }
 
-    .text2 {
-
-        position: relative;
-        display: block;
-
-        visibility: hidden;
-
-        height: 100px;
-
-        top: 25px ;
-
-        color: white;
-
-        font-family: "Georgia-regular";
-        font-weight: 400;
-        font-style: normal;
-
-        text-align: left;
-
-        font-size: 32px;
-        line-height: 32px;
-        letter-spacing: 1.7px;
-
-        margin: 0;
-        padding: 0;
-
-
-    }
-
-    .text3 {
-
-        position: relative;
-        display: block;
-
-        visibility: hidden;
-
-        height: 100px;
-
-        top: 25px ;
-
-        color: white;
-
-        font-family: "Georgia-regular";
-        font-weight: 400;
-        font-style: normal;
-
-        text-align: left;
-
-        font-size: 32px;
-        line-height: 32px;
-        letter-spacing: 1.7px;
-
-        margin: 0;
-        padding: 0;
-
-
-    }
-
-    .text4 {
-
-        position: relative;
-        display: block;
-
-        visibility: hidden;
-
-        height: 100px;
-
-        top: 25px ;
-
-        color: white;
-
-        font-family: "Georgia-regular";
-        font-weight: 400;
-        font-style: normal;
-
-        text-align: left;
-
-        font-size: 32px;
-        line-height: 32px;
-        letter-spacing: 1.7px;
-
-        margin: 0;
-        padding: 0;
-
-
-    }
-
+    
     .control {
         display: flex;
         position: relative;
@@ -482,46 +318,7 @@
     }
 
     
-    .control2:hover , .control3:hover , .control4:hover {
-        background-color: white;
-
-
-    }
-   
-
-    .control1:hover {
-        border: 6px solid white;
-
-    }
-
     
-
-    .control2:hover + img > .foto2 {
-        visibility: visible;
-
-    }
-
-    /*
-    .control2:hover + .foto1 {
-        visibility: hidden;
-
-    }
-
-    
-    .control2:hover .foto3 {
-        visibility: hidden;
-
-    }
-
-    .control2:hover .foto4 {
-        visibility: hidden;
-
-    }
-
-    */
-
-
-
 
 }
 
@@ -632,22 +429,22 @@
     }
 
     .slide1 { 
-        background-image: url(../../assets/images/1.jpg); 
+        background-image: url(../assets/images/1.jpg); 
         
     }
 
     .slide2 { 
-        background-image: url(../../assets/images/2.jpg); 
+        background-image: url(../assets/images/2.jpg); 
         
     }
 
     .slide3 { 
-        background-image: url(../../assets/images/3.jpg); 
+        background-image: url(../assets/images/3.jpg); 
         
     }
 
     .slide4 { 
-        background-image: url(../../assets/images/4.jpg); 
+        background-image: url(../assets/images/4.jpg); 
         
     }
 
@@ -718,6 +515,14 @@
         transform: scale(1);
     }
 
+    #slide1:checked ~ .about  .p1,
+    #slide2:checked ~ .about  .p2,
+    #slide3:checked ~ .about  .p3,
+    #slide4:checked ~ .about  .p4    {
+        
+        display: block;
+        
+    }
     
     .about {
         display: block;
@@ -726,29 +531,17 @@
         width: calc( 100% - 20px) ;
         height: 100px;
 
-        bottom: -60px;
-        /*
-        bottom: -60px;
-        */
+        bottom: 0px;
+        
         margin: 0 auto;
-        padding: 0; 
+        padding: 0;         
 
-        justify-content: space-between;
-
-        /*
-        background-color: rgb(195, 131, 131);
-
-        border: 2px solid black;
-
-        border-radius: 20px;
-
-*/
     }
 
-    .text1 {
+    .p1, .p2, .p3, .p4 {
 
         position: absolute;
-        display: block;
+        display: none;
 
         height: 100px;
         width: calc( 100% - 40px) ;
@@ -772,105 +565,12 @@
 
         bottom: 50px;
 
-
-    }
-
-    .text2 {
-
-        position: absolute;
-        display: block;
-
-        visibility: hidden;
-
-        height: 100px;
-        width: calc( 100% - 40px) ;
-
-        /*top:70px ;*/
-
-        color: white;
-
-        font-family: "Georgia-regular";
-        font-weight: 400;
-        font-style: normal;
-
-        text-align: left;
-
-        font-size: 32px;
-        line-height: 32px;
-        letter-spacing: 1.7px;
-
-        margin: 20px 0 0 20px;
-        padding: 0;
-
-        bottom: 50px;
+        z-index: 50;
 
 
     }
 
-    .text3 {
-
-        position: absolute;
-        display: block;
-
-        visibility: hidden;
-
-        height: 100px;
-        width: calc( 100% - 40px) ;
-
-        /*top:70px ;*/
-
-        color: white;
-
-        font-family: "Georgia-regular";
-        font-weight: 400;
-        font-style: normal;
-
-        text-align: left;
-
-        font-size: 32px;
-        line-height: 32px;
-        letter-spacing: 1.7px;
-
-        margin: 20px 0 0 20px;
-        padding: 0;
-
-        bottom: 50px;
-
-
-    }
-
-    .text4 {
-
-        position: absolute;
-        display: block;
-
-        visibility: hidden;
-
-        height: 100px;
-        width: calc( 100% - 40px) ;
-
-        /*top:70px ;*/
-
-        color: white;
-
-        font-family: "Georgia-regular";
-        font-weight: 400;
-        font-style: normal;
-
-        text-align: left;
-
-        font-size: 32px;
-        line-height: 32px;
-        letter-spacing: 1.7px;
-
-        margin: 20px 0 0 20px;
-        padding: 0;
-
-        bottom: 50px;
-
-
-    }
-
+    
     .control {
         display: flex;
         position: relative;
